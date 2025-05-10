@@ -1,0 +1,381 @@
+
+/* Общее */ 
+body {
+    background-color: rgba(1, 24, 69, 1);
+    color: rgba(232, 237, 255, 1);
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    gap: 185px;
+    margin: auto;
+}
+
+
+/* Шапка */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 82px;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    gap: 110px;
+    padding: 10px 0px;
+}
+
+.header__menu {
+    margin: 0;
+    padding: 10px 0px;
+    display: flex;
+    gap: 36px;
+}
+
+.header__logo {
+    font-family: Oceanic_regular;
+    padding: 10px;
+    font-size: 28px;
+    font-weight: 200; 
+}
+
+.header__link {
+    font-family: Gilroy_regular;
+    font-size: 16px;
+    padding: 10px;
+    line-height: 140%;
+}
+
+.header__basket {
+    padding: 10px;
+}
+
+
+
+/* Приветственная секция */
+.welcome {
+    width: 1210px;
+    display: flex;
+    margin: auto;
+}
+
+.welcome__container {
+    position: relative;
+}
+
+.welcome__content {
+    display: flex;
+    gap: 350px
+}
+
+.fork {
+    position: absolute;
+    right: 44%;
+    top: 10%;
+}
+.welcome__title {
+    font-family: Oceanic_regular;
+    font-weight: 200;
+    font-size: 256px;
+    color: rgba(73, 97, 146, 1);
+    text-align: center;
+    margin: 0;
+}
+
+.welcome__subtitle {
+    font-family: Oceanic_medium;
+    font-size: 80px;
+}
+
+.welcome__description {
+    font-family: Gilroy_regular;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 140%;
+    max-width: 380px;
+}
+
+.welcome__button {
+    border: none;
+    background-color: rgba(254, 106, 60, 1);
+    padding: 20px;
+    width: 285px;
+    height: 74px;
+    font-family: Gilroy_medium;
+    font-size: 24px;
+    line-height: 140%;
+    color: rgba(232, 237, 255, 1);
+}
+
+.welcome__feature {
+    display: flex;
+    gap: 24px;
+}
+
+.welcome__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 50px;
+}
+
+.welcome__left {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.welcome__down {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.welcome__features {
+    max-width: 387px;
+}
+
+
+
+
+/* О ресторане */
+
+.restaurant {
+    margin-top: 185px;
+}
+.menu__title {
+    font-family: Gilroy_regular;
+    font-size: 12px;
+    line-height: 140%;
+}
+
+.main__title {
+    font-family: Oceanic_medium;
+    font-size: 56px;
+    line-height: 105%;
+}
+
+.body__title {
+    display: flex;
+    gap: 120px;
+    align-items: center;
+}
+
+.restaurant__text {
+    font-family: Gilroy_regular;
+    font-size: 18px;
+    line-height: 140%;
+}
+
+.restaurant__button {
+    background-color: rgb(1, 19, 57);
+    border: 1px solid rgba(232, 237, 255, 1);
+    color: rgba(232, 237, 255, 1);
+    padding: 20px;
+    width: 210px;
+    height: 74px;
+    font-size: 24px;
+    line-height: 140%;
+    position: relative;
+    left: 7%;
+}
+
+.restaurant__content {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+}
+
+.restaurant__left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+
+
+/* Меню */
+
+.food {
+    position: relative;
+}
+
+.food__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(73, 97, 146, 1);
+    height: 390px;
+    padding: 0px 37px;
+    margin: 70px 0px;
+}
+
+.food__left {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.food__text {
+    max-width: 386px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.food__img {
+    position: absolute;
+    right: 8%;
+    top: 20%;
+}
+
+.arrow {
+    width: 21px;
+    height: 25px;
+}
+
+.food h2 {
+    font-family: Oceanic_regular;
+    font-size: 36px;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.food p {
+    font-family: Gilroy_regular;
+    font-size: 18px;
+    line-height: 120%;
+    margin: 0;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.money {
+    font-family: Gilroy_medium;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.weight {
+    font-family: Gilroy_regular;
+    font-size: 12px;
+}
+
+.food__button {
+    padding: 20px 48px;
+    width: 180px;
+    height: 65px;
+    background-color: rgba(254, 106, 60, 1);
+    color: rgba(232, 237, 255, 1);
+    font-family: Gilroy_regular;
+    font-size: 18px;
+    border: none;
+}
+
+.go__menu {
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(1, 19, 57);
+    border: 1px solid rgba(232, 237, 255, 1);
+    color: rgba(232, 237, 255, 1);
+    padding: 20px;
+    width: 285px;
+    height: 74px;
+    font-family: Gilroy_regular;
+    font-size: 24px;
+    text-align: center;
+}
+
+
+/* Доставка */
+
+.delivery__content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-height: 430px;
+    margin-top: 60px;
+}
+
+.delivery__left {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    max-width: 320px;
+}
+
+.delivery__one,
+.delivery__two,
+.delivery__three {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.delivery__three {
+    max-width: 320px;
+}
+
+.delivery__content h2 {
+    font-family: Oceanic_regular;
+    font-size: 36px;
+    margin: 0;
+    font-weight: lighter;
+}
+
+.delivery__content span {
+    font-family: Oceanic_regular;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+.delivery__content p {
+    font-family: Gilroy_regular;
+    font-size: 18px;
+    margin: 0;
+    font-weight: lighter;
+}
+
+/* Шрифты */
+@font-face {
+    font-family: 'Oceanic_regular';
+    src: url('../fonts/Oceanic_TRIAL_Regular.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Oceanic_medium';
+    src: url('../fonts/Oceanic_TRIAL_Regular.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Gilroy_regular';
+    src: url('../fonts/Gilroy_Regular.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Gilroy_medium';
+    src: url('../fonts/Gilroy_Regular.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+  }
