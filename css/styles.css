@@ -351,31 +351,335 @@ header {
     font-weight: lighter;
 }
 
+
+/* Отзывы */
+
+.reviews__content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 326px;
+    margin-top: 40px;
+}
+
+.reviews__content p {
+    max-width: 385px;
+    margin: 0;
+}
+
+.reviews__container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.reviews__photo {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.reviews__photo img {
+    max-width: 180px;
+    max-height: 260px;
+}
+
+.reviews__content p {
+    font-family: Gilroy_regular;
+    font-size: 18px;
+    line-height: 120%;
+}
+
+
+/* Акции */
+
+
+.stocks {
+    position: relative;
+}
+
+.stocks__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(73, 97, 146, 1);
+    height: 390px;
+    padding: 0px 37px;
+    margin: 70px 0px;
+}
+
+.stocks__left {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.stocks__text {
+    max-width: 386px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.stocks__img {
+    position: absolute;
+    right: 8%;
+    top: 20%;
+}
+
+.stocks h2 {
+    font-family: Oceanic_regular;
+    font-size: 36px;
+    line-height: 120%;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.stocks p {
+    font-family: Gilroy_regular;
+    font-size: 18px;
+    line-height: 120%;
+    margin: 0;
+}
+
+
+.stocks__button {
+    padding: 20px 48px;
+    width: 230px;
+    height: 65px;
+    background-color: rgba(254, 106, 60, 1);
+    color: rgba(232, 237, 255, 1);
+    font-family: Gilroy_regular;
+    font-size: 18px;
+    border: none;
+}
+
+
+/* Бронь */
+
+.booking__content {
+    display: flex;
+    gap: 60px;
+    margin-top: 60px;
+}
+
+.booking label {
+    font-family: Golroy_regular;
+    font-size: 18px;
+}
+
+.booking__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 590px;
+    height: 546px;
+}
+
+.guest__info {
+    display: flex;
+    gap: 20px;
+}
+
+.booking__details {
+    display: flex;
+    gap: 20px;
+}
+
+.guest__info input {
+    width: 285px;
+    height: 60px;
+}
+
+.booking__details input {
+    width: 183px;
+    height: 60px;
+}
+
+.special__requests textarea {
+    width: 590px;
+    height: 177px;
+}
+
+.booking img {
+    width: 550px;
+    height: 470px;
+}
+
+.booking input, textarea {
+    background-color: rgba(1, 24, 69, 1);
+    border: 1px solid #e8edff;
+    color: rgba(232, 237, 255, 1);
+    font-family: Golroy_regular;
+    font-size: 18px;
+}
+
+.info__name,
+.info__phone,
+.info__date,
+.info__time,
+.info__guests,
+.special__requests {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking button {
+    padding: 20px;
+    width: 590px;
+    height: 74px;
+    background-color: rgba(254, 106, 60, 1);
+    color: rgba(232, 237, 255, 1);
+    font-family: Gilroy_regular;
+    font-size: 24px;
+    border: none;
+}
+
+/* Контакты */
+
+.contacts h2 {
+    font-family: Oceanic_regular;
+    font-size: 36px;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.contacts__text span {
+    font-family: Gilroy_regular;
+    font-size: 18px;
+}
+
+.contacts__questions,
+.contacts__adress,
+.contacts__media {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contacts__content {
+    display: flex;
+    gap: 124px;
+    margin-top: 60px;
+}
+
+.contacts__text {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.question___icons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.phone,
+.email,
+.adress_icon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.media__icons {
+    display: flex;
+    gap: 20px;
+}
+
+footer {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(73, 97, 146, 1);
+    width: 100rem;
+    padding: 60px 120px;
+    height: 637px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer__content {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+    font-family: Gilroy_regular;
+    font-size: 18px;
+    font-weight: lighter;
+}
+.footer h3 {
+    font-family: Oceanic_regular;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+h3 {
+    margin: 0;
+}
+
+.aquarim__end {
+    font-family: Oceanic_regular;
+    font-size: 250px;
+    font-weight: lighter;
+    color: rgba(1, 24, 69, 1);
+}
+
+.footer__menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 423px;
+}
+
+.footer__info {
+    display: flex;
+    gap: 169px;
+}
+
+.footer__about ul,
+.footer__visitors ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 16px;
+    padding: 0;
+}
+
+.footer__end {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* Шрифты */
 @font-face {
     font-family: 'Oceanic_regular';
     src: url('../fonts/Oceanic_TRIAL_Regular.otf') format('opentype');
     font-weight: 200;
     font-style: normal;
-  }
+}
 
   @font-face {
     font-family: 'Oceanic_medium';
     src: url('../fonts/Oceanic_TRIAL_Regular.otf') format('opentype');
     font-weight: 500;
     font-style: normal;
-  }
+}
 
   @font-face {
     font-family: 'Gilroy_regular';
     src: url('../fonts/Gilroy_Regular.otf') format('opentype');
     font-weight: 200;
     font-style: normal;
-  }
+}
 
   @font-face {
     font-family: 'Gilroy_medium';
     src: url('../fonts/Gilroy_Regular.otf') format('opentype');
     font-weight: 500;
     font-style: normal;
-  }
+}
