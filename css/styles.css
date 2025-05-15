@@ -6,8 +6,24 @@ body {
     margin: 0;
 }
 
+.header__menu__tablet {
+    display: none;
+}
+
 li {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: Gilroy_regular;
+    font-size: 16px;
+    color: rgba(232, 237, 255, 1);
+}
+
+a:hover {
+    color: rgba(254, 106, 60, 1);
+    transition: color 0.5s ease;
 }
 
 .container {
@@ -16,6 +32,21 @@ li {
     width: 1200px;
     gap: 185px;
     margin: auto;
+}
+
+.welcome__button:hover,
+.booking button:hover {
+    background-color: rgb(1, 19, 57);
+    border: 1px solid rgba(232, 237, 255, 1);
+    color: rgba(232, 237, 255, 1);
+    transition: 0.5s;
+}
+
+.restaurant__button:hover,
+.go__menu:hover {
+    border: none;
+    background-color: rgba(254, 106, 60, 1);
+    transition: 0.5s;
 }
 
 
@@ -83,6 +114,7 @@ header {
     right: 44%;
     top: 10%;
 }
+
 .welcome__title {
     font-family: Oceanic_regular;
     font-weight: 200;
@@ -106,6 +138,9 @@ header {
 }
 
 .welcome__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
     background-color: rgba(254, 106, 60, 1);
     padding: 20px;
@@ -178,6 +213,9 @@ header {
 }
 
 .restaurant__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: rgb(1, 19, 57);
     border: 1px solid rgba(232, 237, 255, 1);
     color: rgba(232, 237, 255, 1);
@@ -277,6 +315,9 @@ header {
 }
 
 .food__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 20px 48px;
     width: 180px;
     height: 65px;
@@ -301,8 +342,22 @@ header {
     text-align: center;
 }
 
+.food__img {
+  transition: transform 0.8s ease-in-out;
+  transform: rotate(0deg);
+}
+
+.food__content:hover .food__img {
+    transform: rotate(-180deg);
+    transition: 0.8s;
+}
+
 
 /* Доставка */
+
+.delivery__content__tablet {
+    display: none;
+}
 
 .delivery__content {
     display: flex;
@@ -331,20 +386,23 @@ header {
     max-width: 320px;
 }
 
-.delivery__content h2 {
+.delivery__content h2,
+.delivery__content__tablet h2 {
     font-family: Oceanic_regular;
     font-size: 36px;
     margin: 0;
     font-weight: lighter;
 }
 
-.delivery__content span {
+.delivery__content span,
+.delivery__content__tablet span {
     font-family: Oceanic_regular;
     font-size: 24px;
     font-weight: lighter;
 }
 
-.delivery__content p {
+.delivery__content p,
+.delivery__content__tablet p {
     font-family: Gilroy_regular;
     font-size: 18px;
     margin: 0;
@@ -393,7 +451,6 @@ header {
 
 
 /* Акции */
-
 
 .stocks {
     position: relative;
@@ -445,6 +502,9 @@ header {
 
 
 .stocks__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 20px 48px;
     width: 230px;
     height: 65px;
@@ -453,6 +513,16 @@ header {
     font-family: Gilroy_regular;
     font-size: 18px;
     border: none;
+}
+
+.stocks__img {
+    transition: transform 0.8s ease-in-out;
+    transform: rotate(0deg);
+}
+
+.stocks__content:hover .stocks__img {
+    transform: rotate(-180deg);
+    transition: 0.8s;
 }
 
 
@@ -465,7 +535,7 @@ header {
 }
 
 .booking label {
-    font-family: Golroy_regular;
+    font-family: Gilroy_regular;
     font-size: 18px;
 }
 
@@ -511,7 +581,7 @@ header {
     background-color: rgba(1, 24, 69, 1);
     border: 1px solid #e8edff;
     color: rgba(232, 237, 255, 1);
-    font-family: Golroy_regular;
+    font-family: Gilroy_regular;
     font-size: 18px;
 }
 
@@ -526,6 +596,9 @@ header {
 }
 
 .booking button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
     width: 590px;
     height: 74px;
@@ -589,29 +662,27 @@ header {
     gap: 20px;
 }
 
+/* Футер */
+
 footer {
-    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color: rgba(73, 97, 146, 1);
-    width: 100rem;
+    max-width: 1440px;
     padding: 60px 120px;
     height: 637px;
-    max-width: 1200px;
-    margin: auto;
+    margin-top: 150px;
 }
 
 .footer__content {
-    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     gap: 30px;
-    max-width: 1200px;
-    margin: auto;
     font-family: Gilroy_regular;
     font-size: 18px;
-    font-weight: lighter;
+    max-width: 1200px;
 }
 .footer h3 {
     font-family: Oceanic_regular;
@@ -682,4 +753,248 @@ h3 {
     src: url('../fonts/Gilroy_Regular.otf') format('opentype');
     font-weight: 500;
     font-style: normal;
+}
+
+/* Планшеты */
+
+@media screen and (max-width: 1024px) {
+    .header__menu,
+    .header__basket {
+        display: none;
+    }
+
+    .header__menu__tablet {
+        display: block;
+    }
+
+    header {
+        max-width: 740px;
+        margin: auto;
+    }
+
+    .header__container {
+        gap: 553px;
+    }
+
+
+    /* Приветственная секция */
+
+    .welcome {
+        max-width: 740px;
+    }
+
+    .welcome__title {
+        font-size: 158px;
+    }
+
+    .welcome__subtitle {
+        font-size: 52px;
+    }
+
+    .welcome__description {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .welcome__content {
+        gap: 195px;
+    }
+
+    .welcome__left {
+        gap: 30px;
+    }
+
+    .welcome__right {
+        gap: 30px;
+    }
+
+    .welcome__features {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 240px;
+    }
+
+    .welcome__feature {
+        max-height: 76px;
+        gap: 10px;
+    }
+
+    .welcome__feature img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .welcome__feature p {
+        max-width: 166px;
+    }
+
+    .welcome__button {
+        width: 240px;
+        height: 57px;
+        font-size: 18px;
+    }
+
+    .fork {
+        width: 150px;
+        height: 400px;
+        right: 42%;
+        top: 17%;
+    }
+
+    .container {
+        max-width: 740px;
+    }
+
+    /* О ресторане */
+
+    .menu__title {
+        font-size: 10px;
+    }
+
+    .main__title {
+        font-size: 36px;
+    }
+
+    .restaurant__text {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 16px;
+    }
+
+    .restaurant__text p {
+        margin: 0;
+    }
+
+    .restaurant img {
+        max-width: 420px;
+        max-height: 280px;
+        margin-top: 30px;
+    }
+
+    .restaurant__button {
+        width: 285px;
+        height: 57px;
+        font-size: 18px;
+        left: 0;
+    }
+
+    .restaurant__content {
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    /* Меню */
+
+    .food__content {
+        padding: 20px;
+        max-height: 360px;
+        margin: 30px 0px;
+    }
+
+    .food h2 {
+        font-size: 26px;
+    }
+
+    .food__text p,
+    .money {
+        font-size: 16px;
+    }
+
+    .weight {
+        font-size: 12px;
+    }
+
+    .food__text {
+        max-width: 231px;
+        gap: 10px;
+    }
+
+    .food__left {
+        gap: 19px;
+    }
+
+    .arrow {
+        width: 21px;
+        height: 24px;
+    }
+
+    .food__button {
+        width: 180px;
+        height: 54px;
+        font-size: 18px;
+        margin-top: 30px;
+    }
+
+    .food__img {
+        top: 28%;
+        width: 300px;
+        height: 300px;
+    }
+
+    .go__menu {
+        width: 285px;
+        height: 60px;
+        font-size: 20px;
+    }
+
+    /* Доставка */
+
+    .delivery__content {
+        display: none;
+    }
+
+    .delivery__content__tablet {
+        display: block;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        
+    }
+
+    .delivery__text {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 100px;
+    }
+
+    .delivery__left {
+        gap: 30px;
+    }
+
+    .delivery__one,
+    .delivery__two,
+    .delivery__three {
+        gap: 10px;
+    }
+
+    .delivery__text h2,
+    .delivery__text span {
+        font-size: 26px;
+    }
+
+    .delivery__text p {
+        font-size: 16px;
+    }
+
+    /* Отзывы */
+
+    .none {
+        display: none;
+    }
+
+    .reviews__photo {
+        gap: 6px;
+    }
+
+    .reviews__content {
+        gap: 121px;
+    }
+
+    .reviews__content p {
+        font-size: 16px;
+    }
 }

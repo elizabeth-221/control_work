@@ -12,20 +12,24 @@
             <div class="header__container">
                 <div class="header__logo">AQUARIM</div>
                 <ul class="header__menu">
-                    <li class="header__link">О ресторане</li>
-                    <li class="header__link">Меню</li>
-                    <li class="header__link">Доставка и оплата</li>
-                    <li class="header__link">Контакты</li>
+                    <li class="header__link"><a href="#welcome">О ресторане</a></li>
+                    <li class="header__link"><a href="#food">Меню</a></li>
+                    <li class="header__link"><a href="#delivery">Доставка и оплата</a></li>
+                    <li class="header__link"><a href="#contacts">Контакты</a></li>
                 </ul>
-                <div class="header__basket">
+                <a href="#" class="header__basket">
                     <img src="./img/basket.svg" alt="Корзина">
+                </a>
+
+                <div class="header__menu__tablet">
+                    <img src="./img/menu.svg" alt="Раскрывающееся меню">
                 </div>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="welcome">
+        <section id="welcome" class="welcome">
             <div class="welcome__container">
                 <h1 class="welcome__title">AQUARIM</h1>
                 <div class="welcome__content">
@@ -81,11 +85,11 @@
                         <button type="button" class="restaurant__button">Узнать больше</button>
                     </div>
                     
-                    <img src="./img/cook.jpg" alt="">
+                    <img src="./img/cook.jpg" alt="Повар">
                 </div>
             </section>
 
-            <section class="food">
+            <section id="food" class="food">
                 <div class="body__title">
                     <span class="menu__title">МЕНЮ</span>
                     <span class="main__title">БЛЮДА, КОТОРЫЕ НАВСЕГДА</span>
@@ -120,7 +124,7 @@
                 <button type="button" class="go__menu">Перейти в меню</button>
             </section>
 
-            <section class="delivery">
+            <section id="delivery" class="delivery">
                 <div class="body__title">
                     <span class="menu__title">ДОСТАВКА</span>
                     <span class="main__title">БЫСТРО, УДОБНО, НАДЕЖНО</span>
@@ -128,7 +132,7 @@
                 
                 <span class="main__title">ДОСТАВКА ПО МОСКВЕ И МО</span>
 
-                <div class="delivery__content">
+                <div class="delivery__content">                   
                     <div class="delivery__left">
                         <div class="delivery__one">
                             <h2>01</h2>
@@ -143,7 +147,7 @@
                         </div>
                     </div>
 
-                    <img src="./img/courier.jpg" alt="Курьер">
+                    <img class="courier" src="./img/courier.jpg" alt="Курьер">
 
                     <div class="delivery__three">
                         <h2>03</h2>
@@ -151,9 +155,36 @@
                         <p>Вы получите блюда в том виде, в котором их приготовил повар - свежими, вкусными и красивыми, чтобы насладиться непревзойденным вкусом дома</p>
                     </div>
                 </div>
+
+                <div class="delivery__content__tablet">
+                    <img class="courier__tablet" src="./img/courier-tablet.jpg" alt="Курьер">
+
+                    <div class="delivery__text">
+                        <div class="delivery__left">
+                            <div class="delivery__one">
+                                <h2>01</h2>
+                                <span>ТЕРМОСУМКИ ДЛЯ СОХРАНЕНИЯ ТЕПЛА</span>
+                                <p>Мы доставляем в специальных термосумках, чтобы сохранить температуру и свежесть блюд</p>
+                            </div>
+
+                            <div class="delivery__two">
+                                <h2>02</h2>
+                                <span>ГОРЯЧЕЕ И СВЕЖЕЕ</span>
+                                <p>Ваш заказ не успеет остыть и не потеряет своего вкуса в пути</p>
+                            </div>
+                        </div>
+
+                        <div class="delivery__three">
+                            <h2>03</h2>
+                            <span>КАЧЕСТВО КАК В РЕСТОРАНЕ</span>
+                            <p>Вы получите блюда в том виде, в котором их приготовил повар - свежими, вкусными и красивыми, чтобы насладиться непревзойденным вкусом дома</p>
+                        </div>
+                    </div>
+                    
+                </div>
             </section>
 
-            <section class="reviews">
+            <section id="reviews" class="reviews">
                 <div class="body__title">
                     <span class="menu__title">ОТЗЫВЫ</span>
                     <span class="main__title">БЕСЦЕННЫЕ ОТЗЫВЫ</span>
@@ -176,12 +207,12 @@
                     <img src="./img/rw2.jpg" alt="1 отзыв">
                     <img src="./img/rw3.jpg" alt="2 отзыв">
                     <img src="./img/rw4.jpg" alt="3 отзыв">
-                    <img src="./img/rw5.jpg" alt="4 отзыв">
-                    <img src="./img/rw6.jpg" alt="5 отзыв">
+                    <img class="none" src="./img/rw5.jpg" alt="4 отзыв">
+                    <img class="none" src="./img/rw6.jpg" alt="5 отзыв">
                 </div>
             </section>
 
-            <section class="stocks">
+            <section id="stocks" class="stocks">
                 <div class="body__title">
                     <span class="menu__title">АКЦИИ</span>
                     <span class="main__title">ОАЗИС ВЫГОДНЫХ</span>
@@ -209,7 +240,7 @@
                 </div>
             </section>
 
-            <section class="booking">
+            <section id="booking" class="booking">
 
                 <div class="body__title">
                     <span class="menu__title">БРОНЬ</span>
@@ -238,13 +269,13 @@
                             <div class="info__date">
                                 <label for="date">Дата:</label>
                                 <br>
-                                <input type="date" id="date" name="date" required>
+                                <input type="text" id="date" name="date" required>
                             </div>
                             
                             <div class="info__time">
                                 <label for="info__time">Время:</label>
                                 <br>
-                                <input type="time" id="time" name="time" required>
+                                <input type="text" id="time" name="time" required>
                             </div>
                             
                             <div class="info__guests">
@@ -267,7 +298,7 @@
                 </div>              
             </section>
 
-            <section class="contacts">
+            <section id="contacts" class="contacts">
 
                 <div class="body__title">
                     <span class="menu__title">КОНТАКТЫ</span>
