@@ -94,13 +94,17 @@ header {
 
 
 /* Приветственная секция */
+.welcome__container__mobile {
+    display: none;
+}
 .welcome {
     width: 1210px;
     display: flex;
     margin: auto;
 }
 
-.welcome__container {
+.welcome__container,
+.welcome__container__mobile {
     position: relative;
 }
 
@@ -184,6 +188,10 @@ header {
 
 
 /* О ресторане */
+
+.restaurant__content__mobile {
+    display: none;
+}
 
 .restaurant {
     margin-top: 185px;
@@ -528,6 +536,10 @@ header {
 
 /* Бронь */
 
+.booking__tablet {
+    display: none;
+}
+
 .booking__content {
     display: flex;
     gap: 60px;
@@ -572,7 +584,7 @@ header {
     height: 177px;
 }
 
-.booking img {
+.booking__img {
     width: 550px;
     height: 470px;
 }
@@ -610,6 +622,10 @@ header {
 }
 
 /* Контакты */
+
+.contacts__img__tablet {
+    display: none;
+}
 
 .contacts h2 {
     font-family: Oceanic_regular;
@@ -916,8 +932,8 @@ h3 {
     }
 
     .arrow {
-        width: 21px;
-        height: 24px;
+        width: 8px;
+        height: 13px;
     }
 
     .food__button {
@@ -997,4 +1013,278 @@ h3 {
     .reviews__content p {
         font-size: 16px;
     }
+
+    /* Акции */
+
+    .stocks__content {
+        padding: 20px;
+        max-height: 360px;
+        margin: 30px 0px;
+    }
+
+    .stocks h2 {
+        font-size: 26px;
+    }
+
+    .stocks__text p {
+        font-size: 16px;
+    }
+
+    .stocks__text {
+        max-width: 231px;
+        gap: 10px;
+    }
+
+    .stocks__left {
+        gap: 30px;
+    }
+
+    .stocks__button {
+        padding: 16px 20px;
+        width: 180px;
+        height: 54px;
+        font-size: 18px;
+        margin-top: 30px;
+    }
+
+    .stocks__img {
+        left: 47%;
+        top: 28%;
+        width: 300px;
+        height: 300px;
+    }
+
+    /* Бронь */
+
+    .booking__tablet {
+        display: block;
+    }
+
+    .booking__img {
+        display: none;
+    }
+
+    .booking__content {
+        flex-direction: column-reverse;
+        gap: 30px;
+        margin-top: 40px;
+    }
+
+    .guest__info {
+        gap: 15px;
+    }
+
+    .info__name,
+    .info__phone,
+    .guest__info input {
+        width: 360px;
+    }
+
+    .booking__details {
+        gap: 15px;
+    }
+
+    .booking__details input,
+    .info__date,
+    .info__guests,
+    .info__time {
+        width: 235px;
+    }
+
+    .special__requests textarea,
+    .special__requests {
+        width: 735px;
+    }
+
+    .booking label {
+        font-size: 16px;
+    }
+
+    .booking button {
+        width: 740px;
+        height: 54px;
+        font-size: 18px;
+    }
+
+    /* Контакты */
+
+    .contacts__img {
+        display: none;
+    }
+
+    .contacts__img__tablet {
+        display: block;
+        width: 365px;
+        height: 400px;
+    }
+
+    .contacts__content {
+        gap: 75px;
+    }
+
+    .contacts__content h2 {
+        font-size: 26px;
+    }
+
+    .contacts__content span {
+        font-size: 16px;
+    }
+
+    .icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .questions__icons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .media__icons img {
+        width: 46px;
+        height: 46px;
+    }
+
+    /* Футер */
+
+    footer {
+        max-height: 506px
+    }
+
+    footer span,
+    footer li {
+        font-size: 16px;
+    }
+
+    .aquarim__end {
+        font-size: 158px;
+    }
+
+    .footer__menu {
+        justify-content: space-around;
+        gap: 60px;
+    }
+
+    .footer__info {
+        gap: 58px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .body__title {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: flex-start;
+    }
+
+    .menu__title {
+        font-size: 8px;
+    }
+
+    .main__title {
+        font-size: 26px;
+    }
+
+    .container {
+        max-width: 290px;
+    }
+
+    header {
+        max-width: 290px;
+    }
+
+    .header__logo {
+        font-size: 20px;
+    }
+
+    .header__container {
+        max-width: 290px;
+        gap: 150px;
+    }
+    
+    .welcome {
+        max-width: 290px;
+    }
+
+    .welcome__container {
+        display: none;
+        max-width: 290px;
+    }
+
+    .welcome__container__mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 290px;
+        margin: auto;
+    }   
+    
+    .welcome__title {
+        font-size: 62px;
+    }
+
+    .welcome__subtitle {
+        font-size: 42px;
+    }
+
+    .welcome__container__mobile p {
+        font-size: 12px;
+        max-width: 100%;
+    }
+
+    .welcome__top {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .welcome__button {
+        padding: 16px 20px;
+        width: 290px;
+        height: 54px;
+        font-size: 16px;
+    }
+
+    .fork {
+        width: 70px;
+        height: 185px;
+        transform: rotate(-40deg);
+        left: 80%;
+        top: 7%;
+    }
+
+    .welcome__feature img {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* О ресторане */
+    .restaurant__content {
+        display: none;
+    }
+
+    .restaurant__content__mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .restaurant__text {
+        font-size: 12px;
+    }
+
+    .restaurant__button {
+        width: 290px;
+        height: 51px;
+        font-size: 16px;
+    }
+
+    .restaurant__content__mobile img {
+        width: 290px;
+        height: 190px;
+    }
+    
 }
