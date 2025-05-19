@@ -12,20 +12,24 @@
             <div class="header__container">
                 <div class="header__logo">AQUARIM</div>
                 <ul class="header__menu">
-                    <li class="header__link">О ресторане</li>
-                    <li class="header__link">Меню</li>
-                    <li class="header__link">Доставка и оплата</li>
-                    <li class="header__link">Контакты</li>
+                    <li class="header__link"><a href="#welcome">О ресторане</a></li>
+                    <li class="header__link"><a href="#food">Меню</a></li>
+                    <li class="header__link"><a href="#delivery">Доставка и оплата</a></li>
+                    <li class="header__link"><a href="#contacts">Контакты</a></li>
                 </ul>
-                <div class="header__basket">
+                <a href="#" class="header__basket">
                     <img src="./img/basket.svg" alt="Корзина">
+                </a>
+
+                <div class="header__menu__tablet">
+                    <img src="./img/menu.svg" alt="Раскрывающееся меню">
                 </div>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="welcome">
+        <section id="welcome" class="welcome">
             <div class="welcome__container">
                 <h1 class="welcome__title">AQUARIM</h1>
                 <div class="welcome__content">
@@ -57,7 +61,35 @@
                         </div>
                     </div>
                 </div>
-            </div>       
+            </div>  
+            
+            <div class="welcome__container__mobile">
+                <div class="welcome__top">
+                    <h1 class="welcome__title">AQUARIM</h1>
+                    <span class="welcome__subtitle">РЫБНЫЙ РЕСТОРАН</span>
+                    <p class="welcome__description">
+                        Откройте для себя мир изысканных вкусов с нашими рыбными деликатесами, приготовленными специально для вас
+                    </p>
+                </div>
+    
+                <button type="button" class="welcome__button">Меню</button>
+
+                <div class="welcome__features">
+                    <div class="welcome__feature">
+                        <img src="./img/fish.svg" alt="Рыба">
+                        <p class="welcome__description">Свежая рыба из наших аквариумов — гарантированная свежесть</p>
+                    </div>
+
+                    <div class="welcome__feature">
+                        <img src="./img/courier.svg" alt="Курьер">
+                        <p class="welcome__description">Качественная доставка, где горячие блюда сохраняют свой вкус</p>
+                    </div>
+
+                    <img class="fork" src="./img/fork.png" alt="Вилка с креветкой">
+                </div>
+                
+
+            </div>
         </section>
 
         <div class="container">
@@ -81,11 +113,24 @@
                         <button type="button" class="restaurant__button">Узнать больше</button>
                     </div>
                     
-                    <img src="./img/cook.jpg" alt="">
+                    <img src="./img/cook.jpg" alt="Повар">
+                </div>
+
+                <div class="restaurant__content__mobile">
+                    <img src="./img/cook-mobile.jpg" alt="Повар">
+
+                    <div class="restaurant__text">
+                        <p>Наша история началась с мечты о создании места, 
+                            где каждый может насладиться непревзойденным вкусом свежей рыбы прямо у себя дома. Мы поставили перед собой задачу предложить нечто большее, чем просто блюда из рыбы - мы хотели подарить вам настоящее морское путешествие.</p>
+                        
+                        <p>Мы - это место, где каждая деталь имеет значение.</p>
+                    </div>
+
+                    <button type="button" class="restaurant__button">Узнать больше</button>                    
                 </div>
             </section>
 
-            <section class="food">
+            <section id="food" class="food">
                 <div class="body__title">
                     <span class="menu__title">МЕНЮ</span>
                     <span class="main__title">БЛЮДА, КОТОРЫЕ НАВСЕГДА</span>
@@ -117,10 +162,33 @@
                     <img class="arrow" src="./img/arrow_right.svg" alt="Листать вправо">
                 </div>
 
+                <div class="food__content__mobile">
+                    <img class="food__img" src="./img/food.png" alt="Блюдо">
+
+                    <div class="food__text__mobile">
+                        <h2>МОРСКОЙ БРИЗ</h2>
+                        <p>
+                            Тарелка морепродуктов, включающая сочные кусочки краба, ароматные креветки и нежные мидии, подается с фирменным соусом и свежими зелеными травами.
+                        </p>
+
+                        <div class="details">
+                            <span class="money">1300 рублей</span>
+                            <span class="weight">150 г</span>
+                        </div>
+
+                        <button type="button" class="food__button">В корзину</button>
+
+                        <div class="arrows">
+                            <img class="arrow" src="./img/arrow_left.svg" alt="Листать влево">
+                            <img class="arrow" src="./img/arrow_right.svg" alt="Листать вправо">
+                        </div>
+                    </div>
+                </div>
+
                 <button type="button" class="go__menu">Перейти в меню</button>
             </section>
 
-            <section class="delivery">
+            <section id="delivery" class="delivery">
                 <div class="body__title">
                     <span class="menu__title">ДОСТАВКА</span>
                     <span class="main__title">БЫСТРО, УДОБНО, НАДЕЖНО</span>
@@ -128,7 +196,7 @@
                 
                 <span class="main__title">ДОСТАВКА ПО МОСКВЕ И МО</span>
 
-                <div class="delivery__content">
+                <div class="delivery__content">                   
                     <div class="delivery__left">
                         <div class="delivery__one">
                             <h2>01</h2>
@@ -143,7 +211,7 @@
                         </div>
                     </div>
 
-                    <img src="./img/courier.jpg" alt="Курьер">
+                    <img class="courier" src="./img/courier.jpg" alt="Курьер">
 
                     <div class="delivery__three">
                         <h2>03</h2>
@@ -151,8 +219,285 @@
                         <p>Вы получите блюда в том виде, в котором их приготовил повар - свежими, вкусными и красивыми, чтобы насладиться непревзойденным вкусом дома</p>
                     </div>
                 </div>
+
+                <div class="delivery__content__tablet">
+                    <img class="courier__tablet" src="./img/courier-tablet.jpg" alt="Курьер">
+                    <img class="courier__mobile" src="./img/courier-mobile.jpg" alt="Курьер">
+
+                    <div class="delivery__text">
+                        <div class="delivery__left">
+                            <div class="delivery__one">
+                                <h2>01</h2>
+                                <span>ТЕРМОСУМКИ ДЛЯ СОХРАНЕНИЯ ТЕПЛА</span>
+                                <p>Мы доставляем в специальных термосумках, чтобы сохранить температуру и свежесть блюд</p>
+                            </div>
+
+                            <div class="delivery__two">
+                                <h2>02</h2>
+                                <span>ГОРЯЧЕЕ И СВЕЖЕЕ</span>
+                                <p>Ваш заказ не успеет остыть и не потеряет своего вкуса в пути</p>
+                            </div>
+                        </div>
+
+                        <div class="delivery__three">
+                            <h2>03</h2>
+                            <span>КАЧЕСТВО КАК В РЕСТОРАНЕ</span>
+                            <p>Вы получите блюда в том виде, в котором их приготовил повар - свежими, вкусными и красивыми, чтобы насладиться непревзойденным вкусом дома</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <section id="reviews" class="reviews">
+                <div class="body__title">
+                    <span class="menu__title">ОТЗЫВЫ</span>
+                    <span class="main__title">БЕСЦЕННЫЕ ОТЗЫВЫ</span>
+                </div>
+                
+                <span class="main__title">ДОКАЗЫВАЮЩИЕ НАШЕ МАСТЕРСТВО</span>
+
+                <div class="reviews__content">
+                    <p>Мы гордимся доверием наших клиентов и ценим каждый отзыв, который вдохновляет нас становиться еще лучше</p>
+
+                    <div class="reviews__container">
+                        <img class="arrow" src="./img/arrow_left.svg" alt="Листать влево">
+
+                        <img class="arrow" src="./img/arrow_right.svg" alt="Листать вправо">
+                    </div>
+                </div>
+
+                <div class="reviews__photo">
+                    <img src="./img/rw1.jpg" alt="Узнать больше">
+                    <img src="./img/rw2.jpg" alt="1 отзыв">
+                    <img class="none__mobile" src="./img/rw3.jpg" alt="2 отзыв">
+                    <img class="none__mobile" src="./img/rw4.jpg" alt="3 отзыв">
+                    <img class="none" src="./img/rw5.jpg" alt="4 отзыв">
+                    <img class="none" src="./img/rw6.jpg" alt="5 отзыв">
+                </div>
+            </section>
+
+            <section id="stocks" class="stocks">
+                <div class="body__title">
+                    <span class="menu__title">АКЦИИ</span>
+                    <span class="main__title">ОАЗИС ВЫГОДНЫХ</span>
+                </div>
+                
+                <span class="main__title">ПРЕДЛОЖЕНИЙ</span>
+
+                <div class="stocks__content">
+                    <div class="stocks__left">
+                        <img class="arrow" src="./img/arrow_left.svg" alt="Листать влево">
+
+                        <div class="stocks__text">
+                            <h2>СКИДКА 15% НА ПЕРВЫЙ ЗАКАЗ</h2>
+                            <p>
+                                Воспользуйтесь этой прекрасной возможностью и откройте для себя мир изысканных морских деликатесов, которыми славится наш ресторан
+                            </p>
+
+                            <button type="button" class="stocks__button">Забрать скидку</button>
+                        </div>
+
+                        <img class="stocks__img" src="./img/plate.png" alt="Блюдо">
+                    </div>
+                    
+                    <img class="arrow" src="./img/arrow_right.svg" alt="Листать вправо">
+                </div>
+
+                <div class="stocks__content__mobile">
+                    <img class="stocks__img" src="./img/plate.png" alt="Блюдо">
+
+                    <div class="stocks__text__mobile">
+                        <h2>СКИДКА 15% НА ПЕРВЫЙ ЗАКАЗ</h2>
+                        <p>
+                            Воспользуйтесь этой прекрасной возможностью и откройте для себя мир изысканных морских деликатесов, которыми славится наш ресторан
+                        </p>
+
+                        <button type="button" class="stocks__button">Забрать скидку</button>
+
+                        <div class="arrows">
+                            <img class="arrow" src="./img/arrow_left.svg" alt="Листать влево">
+                            <img class="arrow" src="./img/arrow_right.svg" alt="Листать вправо">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="booking" class="booking">
+
+                <div class="body__title">
+                    <span class="menu__title">БРОНЬ</span>
+                    <span class="main__title">ЗАБРОНИРУЙТЕ СВОЕ МЕСТО</span>
+                </div>
+                
+                <span class="main__title">ЗА ЛУЧШИМ СТОЛОМ</span>
+
+                <div class="booking__content">
+                    <form class="booking__form">
+                        <div class="guest__info">
+                            <div class="info__name">
+                                <label for="name">Имя:</label>
+                                <br>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="info__phone">
+                                <label for="phone">Телефон:</label>
+                                <br>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>  
+                        </div>
+
+                        <div class="booking__details">
+                            <div class="info__date">
+                                <label for="date">Дата:</label>
+                                <br>
+                                <input type="text" id="date" name="date" required>
+                            </div>
+                            
+                            <div class="info__time">
+                                <label for="info__time">Время:</label>
+                                <br>
+                                <input type="text" id="time" name="time" required>
+                            </div>
+                            
+                            <div class="info__guests">
+                                <label for="info__guests">Кол-во гостей:</label>
+                                <br>
+                                <input type="number" id="guests" name="guests" min="1" required>
+                            </div>                       
+                        </div>
+
+                        <div class="booking__details__mobile">
+                            <div class="info__date">
+                                <label for="date">Дата:</label>
+                                <br>
+                                <input type="text" id="date" name="date" required>
+                            </div>
+                            
+                            <div class="info__time">
+                                <label for="info__time">Время:</label>
+                                <br>
+                                <input type="text" id="time" name="time" required>
+                            </div>                      
+                        </div>
+                        
+                        <div class="info__guests__mobile">
+                            <label for="info__guests">Кол-во гостей:</label>
+                            <br>
+                            <input type="number" id="guests" name="guests" min="1" required>
+                        </div> 
+
+                        <div class="special__requests">
+                            <label for="notes">Ваши пожелания:</label>
+                            <br>
+                            <textarea id="notes" name="notes"></textarea>
+                        </div>
+
+                        <button type="submit">Забронировать</button>
+                    </form>
+
+                    <img class="booking__img" src="./img/reservation.jpg" alt="Еда">
+                    <img class="booking__tablet" src="./img/reservation-tablet.jpg" alt="Еда">
+                    <img class="booking__mobile" src="./img/reservation-mobile.jpg" alt="Еда">
+                </div>              
+            </section>
+
+            <section id="contacts" class="contacts">
+
+                <div class="body__title">
+                    <span class="menu__title">КОНТАКТЫ</span>
+                    <span class="main__title">МОРСКАЯ АТМОСФЕРА,</span>
+                </div>
+                
+                <span class="main__title">ОБЪЕДИНЯЮЩАЯ ЛЮДЕЙ</span>
+
+                <div class="contacts__content">
+                    <img class="contacts__img" src="./img/contacts.jpg" alt="Еда">
+
+                    <img class="contacts__img__tablet" src="./img/contacts-tablet.jpg" alt="Еда">
+
+                    <img class="contacts__img__mobile" src="./img/contacts-mobile.jpg" alt="Еда">
+
+                    <div class="contacts__text">
+                        <div class="contacts__questions">
+                            <h2>ЕСЛИ У ВАС ОСТАЛИСЬ ВОПРОСЫ:</h2>
+
+                            <div class="questions__icons">
+                                <div class="phone">
+                                    <img class="icon" src="./img/phone.svg" alt="Телефон">
+                                    <span>+7 (965) 478-89-76</span>
+                                </div>
+
+                                <div class="email">
+                                    <img class="icon" src="./img/email.svg" alt="Электронная почта">
+                                    <span>aquarim@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contacts__adress">
+                            <h2>АДРЕС:</h2>
+
+                            <div class="adress_icon">
+                                <img class="icon" src="./img/adress.svg" alt="Адрес">
+                                <span>г. Москва, ул. Тверская, д.8</span>
+                            </div>
+                        </div>
+
+                        <div class="contacts__media">
+                            <h2>МЫ В СОЦИАЛЬНЫХ СЕТЯХ:</h2>
+
+                            <div class="media__icons">
+                                <img src="./img/inst.svg" alt="Инстаграм">
+                                <img src="./img/tg.svg" alt="Телеграм">
+                                <img src="./img/vk.svg" alt="ВКонтакте">
+                                <img src="./img/yt.svg" alt="Ютуб">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
     </main>
+
+    <footer>
+        <div class="footer__content">
+            <div class="footer__menu">
+                <span>© 2018-2024 AQUARIM</span>
+
+                <div class="footer__info">
+                    <div class="footer__about">
+                        <h3>О РЕСТОРАНЕ</h3>
+
+                        <ul>
+                            <li>О шефе</li>
+                            <li>Галерея</li>
+                            <li>Новости</li>
+                            <li>Команда</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__visitors">
+                        <h3>ДЛЯ ПОСЕТИТЕЛЕЙ</h3>
+
+                        <ul>
+                            <li>Меню</li>
+                            <li>Доставка и оплата</li>
+                            <li>Отзывы</li>
+                            <li>Контакты</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <span class="aquarim__end">AQUARIM</span>
+
+            <div class="footer__end">
+                <span>Политика обработки персональных данных</span>
+                <span>Desing by @sshultse</span>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
